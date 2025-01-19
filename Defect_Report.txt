@@ -43,4 +43,4 @@ Reference:
 Test case ID(s): TC123
 
 Comments:
-Only tested on macOs, not on windows.
+Only tested on macOS, not on windows.
