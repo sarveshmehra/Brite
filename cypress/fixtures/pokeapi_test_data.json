@@ -1,0 +1,7 @@
+{
+  "validBerryName": "cheri",
+  "invalidBerryName": "meri",
+  "validBerryId": "1",
+  "invalidBerryId": "125",
+  "berryFlavor": "spicy"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "brite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:webFirefoxHeadless": "APP_TYPE=web cypress run --spec 'cypress/e2e/imdbweb/imdb.cy.js' --browser firefox",
+    "test:webFirefox": "APP_TYPE=web cypress run --spec 'cypress/e2e/imdbweb/imdb.cy.js' --browser firefox --headed",
+    "test:webChromeHeadless": "APP_TYPE=web cypress run --spec 'cypress/e2e/imdbweb/imdb.cy.js' --browser chrome --headless",
+    "test:webChrome": "APP_TYPE=web cypress run --spec 'cypress/e2e/imdbweb/imdb.cy.js' --browser chrome --headed",
+    "test:api": "APP_TYPE=api cypress run --spec 'cypress/e2e/pokeapi/**/*.cy.js'",
+    "test:gui": "APP_TYPE=web cypress open"
+  },
+  "keywords": [],
+  "author": "Sarvesh Mehra",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "Brite Payments QA Exercise"
+}

@@ -1,0 +1,46 @@
+Summary:
+Not able to rate a movie in Top box office list.
+
+Priority: 
+Medium
+
+Severity:
+Low
+
+Environment: QA
+Operating System: macOS 14.0.1 (Sonoma)
+Browsers: Chrome 131.0.6778.69, Firefox 134.0.1
+Device: MacBook Pro
+
+Module/Component:
+Top box office page.
+
+Steps to Reproduce:
+1. Go to IMDb.com, unfold the Menu and navigate to the Top Box Office section. 
+2. Then click on any item on the Top box office list.
+3. Then click on the IMDb Rating button, click on the Rate button, and set a 10 stars Rating.
+4. Try to click on the Rate button on the modal.
+
+Expected Result:
+Rate button on the modal should be enabled to submit rating.
+
+Actual Result:
+Rate button on the modal is disabled.
+
+Attachments
+Screenshots: attached
+Screen recordings: No
+Log files: attached
+Error messages: no error message
+
+Frequency of Occurrence:
+Always
+
+Test Data:
+N/A
+
+Reference:
+Test case ID(s): TC123
+
+Comments:
+Only tested on macOs, not on windows.
