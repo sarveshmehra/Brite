@@ -21,7 +21,7 @@ describe('Test Suite: IMDb.com Tests', () => {
             .click();
     });
 
-    it.skip('Search Nicolas Cage and access the first upcoming in-production movie', () => {
+    it('Search Nicolas Cage and access the first upcoming in-production movie', () => {
         Home.getSearchBox()
             .clear()
             .type(testData.upcomingMovieOfActor);
@@ -33,7 +33,7 @@ describe('Test Suite: IMDb.com Tests', () => {
         ActorProfile.getFirstUpcoming(testData.movieState).click();
     });
 
-    it.skip('Rate 5-star second most popular movie', () => {
+    it('Rate 5-star second most popular movie', () => {
         Home.getMainMenu().click();
         Home.getMoviesLink().click();
         Home.getTopBoxOfficeLink().click();
@@ -50,7 +50,7 @@ describe('Test Suite: IMDb.com Tests', () => {
         TopBoxOffice.getRatingSubmitButton().click({ force: true });
     });
 
-    it.skip("Display second photo from all Danny Trejo photos in Breaking Bad", () => {
+    it("Display second photo from all Danny Trejo photos in Breaking Bad", () => {
         Home.getMainMenu().click();
         Home.getTvShowsLink().click();
         Home.getTop250TvShowsLink().click();
@@ -72,7 +72,7 @@ describe('Test Suite: IMDb.com Tests', () => {
         Top250TvShows.getSecondImageLink().click();       // can provide timeout while loading image link
     });
 
-    it.skip("Get third celebrity amongst all born yeterday", () => {
+    it("Get third celebrity amongst all born yeterday", () => {
         Home.getMainMenu().click();
         Home.getCelebsLink().click();
         Home.getBornTodayLink().click();
