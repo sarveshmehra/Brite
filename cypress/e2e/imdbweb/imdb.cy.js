@@ -111,7 +111,7 @@ describe('Test Suite: IMDb.com Tests', () => {
         Celebs.getAdvanceSearchResults()
             .should('not.be.disabled')
             .click();
-        cy.checkIfElementExists(Celebs.getSearchResultContainer).then((exists) => {
+        cy.checkIfElementExists(Celebs.getSearchResultContainer()).then((exists) => {
             if (exists) {
                 Celebs.getFirstPerson()
                     .click()
