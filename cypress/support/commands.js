@@ -17,7 +17,7 @@ Cypress.Commands.add('getYesterdayDate', () => {
 });
 
 Cypress.Commands.add('checkIfElementExists', (selector) => {
-    return cy.get('body').then(($elements) => {
+    return cy.get('body').find('ul').then(($elements) => {
         return $elements.length > 0 ? true : false;
     });
 });

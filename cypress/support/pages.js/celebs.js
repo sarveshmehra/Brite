@@ -33,7 +33,7 @@ class Celebs {
     }
 
     getSearchResultContainer(){
-        return `div[data-testid="nlib-meter-const-container"]`
+        return 'ul'
     }
 
     getFirstPerson() {
