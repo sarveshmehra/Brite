@@ -33,7 +33,7 @@ class Celebs {
     }
 
     getSearchResultContainer(){
-        return 'ul'
+        return `'ul'`
     }
 
     getFirstPerson() {
