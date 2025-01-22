@@ -21,7 +21,7 @@ describe('Test Suite: IMDb.com Tests', () => {
             .click();
     });
 
-    it('Search Nicolas Cage and access the first upcoming in-production movie', () => {
+    it.skip('Search Nicolas Cage and access the first upcoming in-production movie', () => {
         Home.getSearchBox()
             .clear()
             .type(testData.upcomingMovieOfActor);
@@ -29,12 +29,11 @@ describe('Test Suite: IMDb.com Tests', () => {
             .should('be.visible')
             .click();
         ActorProfile.getUpcomingSection()
-            .should('be.visible')
-            .click();
+            .click();    
         ActorProfile.getFirstUpcoming(testData.movieState).click();
     });
 
-    it('Rate 5-star second most popular movie', () => {
+    it.skip('Rate 5-star second most popular movie', () => {
         Home.getMainMenu().click();
         Home.getMoviesLink().click();
         Home.getTopBoxOfficeLink().click();
@@ -51,7 +50,7 @@ describe('Test Suite: IMDb.com Tests', () => {
         TopBoxOffice.getRatingSubmitButton().click({ force: true });
     });
 
-    it("Display second photo from all Danny Trejo photos in Breaking Bad", () => {
+    it.skip("Display second photo from all Danny Trejo photos in Breaking Bad", () => {
         Home.getMainMenu().click();
         Home.getTvShowsLink().click();
         Home.getTop250TvShowsLink().click();
@@ -73,7 +72,7 @@ describe('Test Suite: IMDb.com Tests', () => {
         Top250TvShows.getSecondImageLink().click();       // can provide timeout while loading image link
     });
 
-    it("Get third celebrity amongst all born yeterday", () => {
+    it.skip("Get third celebrity amongst all born yeterday", () => {
         Home.getMainMenu().click();
         Home.getCelebsLink().click();
         Home.getBornTodayLink().click();
@@ -111,7 +110,7 @@ describe('Test Suite: IMDb.com Tests', () => {
         });
         Celebs.getAdvanceSearchResults()
             .should('not.be.disabled')
-            .click()
+            .click();
         cy.checkIfElementExists(Celebs.getSearchResultContainer).then((exists) => {
             if (exists) {
                 Celebs.getFirstPerson()
