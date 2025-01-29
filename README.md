@@ -1,4 +1,4 @@
-# Brite QA Assignment
+# API and GUI test using Cypress
 
 ## Automated Tests
 
