@@ -1,4 +1,4 @@
-# API and GUI test using Cypress
+# API and Web automated tests using Cypress
 
 ## Automated Tests
 
