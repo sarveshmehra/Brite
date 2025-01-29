@@ -1,5 +1,5 @@
 {
-  "name": "brite",
+  "name": "Cypress",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -14,5 +14,5 @@
   "author": "Sarvesh Mehra",
   "license": "ISC",
   "type": "commonjs",
-  "description": "Brite Payments QA Exercise"
+  "description": "API & Web tests using Cypress"
 }
